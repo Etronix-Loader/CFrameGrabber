@@ -148,7 +148,7 @@ TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function CWKAWL_fake_script() -- TextLabel.LocalScript 
+local function NYCZE_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local plr = game.Players.LocalPlayer
@@ -163,15 +163,19 @@ local function CWKAWL_fake_script() -- TextLabel.LocalScript
 	
 	
 end
-coroutine.wrap(CWKAWL_fake_script)()
-local function CUFHW_fake_script() -- Copy.LocalScript 
+coroutine.wrap(NYCZE_fake_script)()
+local function XZYPBVC_fake_script() -- Copy.LocalScript 
 	local script = Instance.new('LocalScript', Copy)
 
-    setclipboard()
-	 
+	local plr = game.Players.LocalPlayer
+	local Humanoid = plr.Character:WaitForChild("HumanoidRootPart")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	           
+	end)
 end
-coroutine.wrap(CUFHW_fake_script)()
-local function JVVMKZ_fake_script() -- Print.LocalScript 
+coroutine.wrap(XZYPBVC_fake_script)()
+local function AWCHP_fake_script() -- Print.LocalScript 
 	local script = Instance.new('LocalScript', Print)
 
 	local plr = game.Players.LocalPlayer
@@ -182,8 +186,8 @@ local function JVVMKZ_fake_script() -- Print.LocalScript
 	end)
 	
 end
-coroutine.wrap(JVVMKZ_fake_script)()
-local function MTGOX_fake_script() -- Credit.LocalScript 
+coroutine.wrap(AWCHP_fake_script)()
+local function IDSM_fake_script() -- Credit.LocalScript 
 	local script = Instance.new('LocalScript', Credit)
 
 	while true do
@@ -195,8 +199,8 @@ local function MTGOX_fake_script() -- Credit.LocalScript
 		wait(3)
 	end
 end
-coroutine.wrap(MTGOX_fake_script)()
-local function XWFC_fake_script() -- CreditS.LocalScript 
+coroutine.wrap(IDSM_fake_script)()
+local function QKBPCH_fake_script() -- CreditS.LocalScript 
 	local script = Instance.new('LocalScript', CreditS)
 
 	while true do
@@ -208,8 +212,8 @@ local function XWFC_fake_script() -- CreditS.LocalScript
 		wait(3)
 	end
 end
-coroutine.wrap(XWFC_fake_script)()
-local function GZOR_fake_script() -- Main.localscript 
+coroutine.wrap(QKBPCH_fake_script)()
+local function XRYJCUZ_fake_script() -- Main.localscript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -266,8 +270,8 @@ local function GZOR_fake_script() -- Main.localscript
 	
 	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(GZOR_fake_script)()
-local function OBQF_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(XRYJCUZ_fake_script)()
+local function AVGYHJ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -275,4 +279,4 @@ local function OBQF_fake_script() -- TextButton.LocalScript
 		print("Closed")
 	end)
 end
-coroutine.wrap(OBQF_fake_script)()
+coroutine.wrap(AVGYHJ_fake_script)()
