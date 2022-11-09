@@ -1,0 +1,278 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Made by: Made by: Vuzionix#8341
+
+-- Instances:
+
+local CFrame = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local CFrameText = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Copy = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Print = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Name = Instance.new("TextLabel")
+local NameS = Instance.new("TextLabel")
+local Credit = Instance.new("TextLabel")
+local CreditS = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+CFrame.Name = "CFrame"
+CFrame.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CFrame.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = CFrame
+Main.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Main.Position = UDim2.new(0.402798235, 0, 0.313253015, 0)
+Main.Size = UDim2.new(0, 263, 0, 186)
+
+CFrameText.Name = "CFrameText"
+CFrameText.Parent = Main
+CFrameText.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+CFrameText.Position = UDim2.new(0.0532319397, 0, 0.225806445, 0)
+CFrameText.Size = UDim2.new(0, 236, 0, 39)
+
+UICorner.Parent = CFrameText
+
+TextLabel.Parent = CFrameText
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.00423728814, 0, 0.128205135, 0)
+TextLabel.Size = UDim2.new(0, 236, 0, 28)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "CFRAME: "
+TextLabel.TextColor3 = Color3.fromRGB(255, 85, 127)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Copy.Name = "Copy"
+Copy.Parent = CFrameText
+Copy.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Copy.Position = UDim2.new(0.258474559, 0, 1.25641024, 0)
+Copy.Size = UDim2.new(0, 114, 0, 25)
+Copy.Font = Enum.Font.Unknown
+Copy.Text = "Copy CFrame"
+Copy.TextColor3 = Color3.fromRGB(255, 85, 127)
+Copy.TextScaled = true
+Copy.TextSize = 14.000
+Copy.TextWrapped = true
+
+UICorner_2.Parent = Copy
+
+Print.Name = "Print"
+Print.Parent = CFrameText
+Print.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Print.Position = UDim2.new(-0.0042372942, 0, 2.33333325, 0)
+Print.Size = UDim2.new(0, 114, 0, 25)
+Print.Font = Enum.Font.Unknown
+Print.Text = "Print CFrame"
+Print.TextColor3 = Color3.fromRGB(255, 85, 127)
+Print.TextScaled = true
+Print.TextSize = 14.000
+Print.TextWrapped = true
+
+UICorner_3.Parent = Print
+
+Name.Name = "Name"
+Name.Parent = Main
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.117870726, 0, 0, 0)
+Name.Size = UDim2.new(0, 200, 0, 26)
+Name.ZIndex = 2
+Name.Font = Enum.Font.Unknown
+Name.Text = "CFrame Grabber"
+Name.TextColor3 = Color3.fromRGB(255, 85, 127)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+NameS.Name = "NameS"
+NameS.Parent = Main
+NameS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameS.BackgroundTransparency = 1.000
+NameS.Position = UDim2.new(0.117870726, 0, 0, 0)
+NameS.Size = UDim2.new(0, 204, 0, 26)
+NameS.Font = Enum.Font.Unknown
+NameS.Text = "CFrame Grabber"
+NameS.TextColor3 = Color3.fromRGB(0, 0, 0)
+NameS.TextScaled = true
+NameS.TextSize = 14.000
+NameS.TextWrapped = true
+
+Credit.Name = "Credit"
+Credit.Parent = Main
+Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit.BackgroundTransparency = 1.000
+Credit.Position = UDim2.new(0.117870726, 0, 0.139784947, 0)
+Credit.Size = UDim2.new(0, 200, 0, 13)
+Credit.ZIndex = 2
+Credit.Font = Enum.Font.Unknown
+Credit.Text = "Made by: Vuzionix#8341"
+Credit.TextColor3 = Color3.fromRGB(255, 85, 127)
+Credit.TextScaled = true
+Credit.TextSize = 14.000
+Credit.TextWrapped = true
+
+CreditS.Name = "CreditS"
+CreditS.Parent = Main
+CreditS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditS.BackgroundTransparency = 1.000
+CreditS.Position = UDim2.new(0.117870726, 0, 0.139784947, 0)
+CreditS.Size = UDim2.new(0, 204, 0, 13)
+CreditS.Font = Enum.Font.Unknown
+CreditS.Text = "Made by: Vuzionix#8341"
+CreditS.TextColor3 = Color3.fromRGB(0, 0, 0)
+CreditS.TextScaled = true
+CreditS.TextSize = 14.000
+CreditS.TextWrapped = true
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.891436219, 0, -0.00395128131, 0)
+TextButton.Size = UDim2.new(0, 28, 0, 20)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 85, 127)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function CWKAWL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local plr = game.Players.LocalPlayer
+	local Humanoid = plr.Character:WaitForChild("HumanoidRootPart")
+	
+	while wait do
+		task.wait(0.1)
+		script.Parent.Text = "CFrame: ".. tostring(Humanoid.CFrame.Position)
+		task.wait(0.1)
+		script.Parent.Text = "CFrame: ".. tostring(Humanoid.CFrame.Position)
+	end
+	
+	
+end
+coroutine.wrap(CWKAWL_fake_script)()
+local function CUFHW_fake_script() -- Copy.LocalScript 
+	local script = Instance.new('LocalScript', Copy)
+
+    setclipboard()
+	 
+end
+coroutine.wrap(CUFHW_fake_script)()
+local function JVVMKZ_fake_script() -- Print.LocalScript 
+	local script = Instance.new('LocalScript', Print)
+
+	local plr = game.Players.LocalPlayer
+	local Humanoid = plr.Character:WaitForChild("HumanoidRootPart")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		print(tostring(Humanoid.CFrame.Position))
+	end)
+	
+end
+coroutine.wrap(JVVMKZ_fake_script)()
+local function MTGOX_fake_script() -- Credit.LocalScript 
+	local script = Instance.new('LocalScript', Credit)
+
+	while true do
+	local text = "Made by: Vuzionix#8341"
+	for i = 1, #text do
+		script.Parent.Text = string.sub(text, 1, i)
+		wait(0.05)
+		end
+		wait(3)
+	end
+end
+coroutine.wrap(MTGOX_fake_script)()
+local function XWFC_fake_script() -- CreditS.LocalScript 
+	local script = Instance.new('LocalScript', CreditS)
+
+	while true do
+	local text = "Made by: Vuzionix#8341"
+	for i = 1, #text do
+		script.Parent.Text = string.sub(text, 1, i)
+		wait(0.05)
+		end
+		wait(3)
+	end
+end
+coroutine.wrap(XWFC_fake_script)()
+local function GZOR_fake_script() -- Main.localscript 
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(GZOR_fake_script)()
+local function OBQF_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.CFrame.Main.Visible = false
+		print("Closed")
+	end)
+end
+coroutine.wrap(OBQF_fake_script)()
